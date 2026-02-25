@@ -114,7 +114,13 @@ export default defineConfig({
 			parseDirectiveNode,
 		],
 		rehypePlugins: [
-			rehypeKatex,
+			[
+				rehypeKatex,
+				{
+					strict: (errorCode) =>
+						errorCode === "unicodeTextInMathMode" ? "ignore" : "warn",
+				},
+			],
 			rehypeSlug,
 			[
 				rehypeComponents,
