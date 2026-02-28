@@ -4,6 +4,7 @@ description: DediRock 2025 黑五大促上线，洛杉矶/纽约机房可选，K
 published: 2026-01-22
 image: ../../../assets/2026012100351435140014.png
 tags: [VPS, 优惠, 黑五, 便宜VPS]
+category: Guides
 ---
 
 DediRock 最近上线了 **2025 黑五 (Black Friday)** 促销活动。这次力度非常大，一口气放出了 8 个特价套餐，最低年付仅需 **$6.59**（约合人民币 48 元/年），这价格在目前的 VPS 市场上非常有竞争力。

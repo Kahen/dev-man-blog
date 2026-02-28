@@ -3,6 +3,7 @@ title: OpenWrt 设置 IPv6：中继思路与落地步骤（首篇）
 description: 基于一篇实践帖的思路，梳理 OpenWrt 在二级路由场景下获取并转发 IPv6 的关键配置与排查要点。
 published: 2026-01-22
 image: ../../../assets/blog-placeholder-about.jpg
+category: Guides
 ---
 
 这篇是我的第一篇博客，记录一次 OpenWrt 在“二级/旁路由”场景下拿不到 IPv6 的解决思路与操作要点。内容基于恩山论坛一篇实践帖的经验总结，我做了归纳、简化和风险提示，便于落地。

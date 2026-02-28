@@ -3,6 +3,7 @@ title: Redlock 使用最佳实践：生产可用指南（含 Kotlin 示例）
 description: 一文讲清 Redlock 在生产环境中的正确打开方式：TTL 设计、续期、重试抖动、幂等、防脑裂，以及基于 Kotlin + Redisson 的落地代码示例。
 published: 2026-02-25
 tags: [Redis, Redlock, Kotlin, 分布式锁, 后端]
+category: Guides
 ---
 
 很多团队第一次上分布式锁，都会踩同一个坑：

@@ -3,6 +3,7 @@ title: 彻底解决 DNS 泄露：Mihomo (Clash Meta) 核心配置指南
 description: Mihomo (原 Clash Meta) 的 DNS 泄露是很多人的隐私痛点。本文深入解析 Fake-IP 模式、分流策略以及如何编写一份无泄露的 DNS 配置。
 published: 2026-01-22
 tags: [Mihomo, Clash, DNS, 隐私安全, 教程]
+category: Guides
 ---
 
 在折腾软路由或使用代理工具时，**DNS 泄露 (DNS Leak)** 是一个老生常谈但极其致命的问题。

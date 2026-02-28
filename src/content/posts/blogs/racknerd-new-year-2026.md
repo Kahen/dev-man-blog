@@ -4,6 +4,7 @@ description: RackNerd 开启 2025 New Year 促销，洛杉矶/圣何塞等多机
 published: 2026-01-22
 image: ../../../assets/racknerd-2026-newyear.jpg 
 tags: [VPS, RackNerd, 便宜VPS, 推荐]
+category: Guides
 ---
 
 如果说在“便宜 VPS”界要选一个**“稳如老狗”**的代表，那绝对是 **RackNerd**。
