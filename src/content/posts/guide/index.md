@@ -1,7 +1,7 @@
 ---
 title: Simple Guides for Fuwari
 published: 2024-04-01
-description: "How to use this blog template."
+description: "Beginner guide to using the Fuwari Astro blog template, covering post frontmatter fields, file organization, and practical customization points for content publishing workflows."
 image: "./cover.jpeg"
 tags: ["Fuwari", "Blogging", "Customization"]
 category: Guides

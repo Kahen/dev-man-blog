@@ -1,7 +1,7 @@
 ---
 title: Markdown Example
 published: 2023-10-01
-description: A simple example of a Markdown blog post.
+description: Comprehensive Markdown syntax demo covering headings, lists, quotes, links, tables, code blocks, footnotes, and formatting patterns for clear technical blog writing.
 tags: [Markdown, Blogging, Demo]
 category: Examples
 draft: false

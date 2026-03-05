@@ -1,6 +1,6 @@
 ---
 title: RackNerd 2026 新年大促：年付 $11.29 起，稳如老狗的便宜 VPS
-description: RackNerd 开启 2025 New Year 促销，洛杉矶/圣何塞等多机房可选，1Gbps 带宽，低至 $11.29/年，建站/备用节点首选。
+description: RackNerd 2025 新年促销汇总：最低年付 $11.29，覆盖洛杉矶 DC-02、圣何塞等热门机房。本文整理套餐配置、机房选择建议、网络测试 IP 与适用场景，帮你低成本选到稳定 VPS。
 published: 2026-01-22
 image: ../../../assets/racknerd-2026-newyear.jpg 
 tags: [VPS, RackNerd, 便宜VPS, 推荐]

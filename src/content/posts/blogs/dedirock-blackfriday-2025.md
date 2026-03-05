@@ -1,6 +1,6 @@
 ---
 title: DediRock 黑五特价：美国 VPS 年付低至 $6.59 (KVM架构)
-description: DediRock 2025 黑五大促上线，洛杉矶/纽约机房可选，KVM 虚拟化，年付不到 7 刀，适合新手入门或轻量备用。
+description: DediRock 2025 黑五特价盘点：美国洛杉矶/纽约机房，KVM 架构与 1Gbps 端口，年付最低 $6.59。文内提供套餐对比、购买链接、网络测试与使用建议，适合新手入门和轻量备用。
 published: 2026-01-22
 image: ../../../assets/2026012100351435140014.png
 tags: [VPS, 优惠, 黑五, 便宜VPS]

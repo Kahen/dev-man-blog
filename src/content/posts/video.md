@@ -1,7 +1,7 @@
 ---
 title: Include Video in the Posts
 published: 2023-08-01
-description: This post demonstrates how to include embedded video in a blog post.
+description: Learn how to embed YouTube and Bilibili videos in Markdown posts by pasting iframe code, with copy-ready examples to build richer, media-friendly blog content quickly.
 tags: [Example, Video]
 category: Examples
 draft: false

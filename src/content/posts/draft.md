@@ -1,6 +1,7 @@
 ---
 title: Draft Example
 published: 2022-07-01
+description: "This draft post demonstrates how unpublished content works in Fuwari. Keep draft=true to hide it from production, then switch to draft=false after editing and review."
 tags: [Markdown, Blogging, Demo]
 category: Examples
 draft: true

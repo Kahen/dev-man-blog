@@ -1,6 +1,6 @@
 ---
 title: OpenWrt 设置 IPv6：中继思路与落地步骤（首篇）
-description: 基于一篇实践帖的思路，梳理 OpenWrt 在二级路由场景下获取并转发 IPv6 的关键配置与排查要点。
+description: 记录 OpenWrt 在二级/旁路由场景下中继 IPv6 的完整思路：从 wan6 获取前缀、wan 开启 relay、lan 发放地址到 /etc/config/dhcp 的关键配置，并附常见问题与排查清单。
 published: 2026-01-22
 image: ../../../assets/blog-placeholder-about.jpg
 category: Guides

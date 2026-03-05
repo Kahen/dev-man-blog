@@ -2,7 +2,7 @@
 title: Markdown Extended Features
 published: 2024-05-01
 updated: 2024-11-29
-description: 'Read more about Markdown features in Fuwari'
+description: 'Explore Fuwari Markdown extensions like GitHub repo cards, admonitions, custom titles, spoiler syntax, and GitHub-style callouts to create richer, more interactive documentation.'
 image: ''
 tags: [Demo, Example, Markdown, Fuwari]
 category: 'Examples'

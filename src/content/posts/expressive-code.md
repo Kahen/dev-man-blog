@@ -1,7 +1,7 @@
 ---
 title: Expressive Code Example
 published: 2024-04-10
-description: How code blocks look in Markdown using Expressive Code.
+description: Hands-on Expressive Code showcase for Astro Markdown posts, including syntax highlighting, editor and terminal frames, line markers, labels, and rich code presentation patterns.
 tags: [Markdown, Blogging, Demo]
 category: Examples
 draft: false

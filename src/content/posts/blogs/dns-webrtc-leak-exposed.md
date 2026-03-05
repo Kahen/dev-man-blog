@@ -1,6 +1,6 @@
 ---
 title: 隐私自测：你的代理真的安全吗？浅谈 DNS 泄露与 WebRTC 漏洞
-description: 挂了梯子就安全了？本文带你深入了解 DNS 泄露原理、WebRTC 导致的真实 IP 暴露问题，并提供主流浏览器的修复方案与在线检测工具。
+description: 隐私自测指南：详解 DNS 泄露与 WebRTC 泄露的原理、风险与区别，提供 BrowserLeaks 和 IPLeak 检测方法，以及 Firefox、Opera、Chrome/Edge 的修复步骤，帮助你避免真实 IP 与访问记录暴露。
 published: 2026-01-22
 tags: [隐私安全, DNS泄露, WebRTC, 科普, VPS]
 category: Guides
