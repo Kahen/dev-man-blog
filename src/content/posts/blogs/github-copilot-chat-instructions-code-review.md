@@ -51,7 +51,7 @@ category: Guides
 
 一键安装链接（已替换为当前仓库地址）：
 
-- [点击安装聊天指令](https://aka.ms/awesome-copilot/install/instructions?url=vscode%3Achat-instructions%2Finstall%3Furl%3Dhttps%253A%252F%252Fraw.githubusercontent.com%252FKahen%252Fdev-man-blog%252Fmain%252F.github%252Finstructions%252Fcode-review-generic-zh.instructions.md)
+- [点击安装聊天指令](https://aka.ms/awesome-copilot/install/instructions?url=vscode%3Achat-instructions%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FKahen%2Fdev-man-blog%2Frefs%2Fheads%2Fmaster%2F.github%2Finstructions%2Fcode-review-generic-zh.instructions.md)
 
 ---
 
