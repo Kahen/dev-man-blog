@@ -1,0 +1,35 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#FFFCF7"/>
+  <text x="80" y="88" fill="#0F172A" font-family="Arial, sans-serif" font-size="34" font-weight="700">架构设计的长期课题：持续平衡三种目标</text>
+  <text x="80" y="126" fill="#475569" font-family="Arial, sans-serif" font-size="20">没有单项满分的通用答案，只有在业务约束下反复校准的取舍</text>
+
+  <polygon points="600,170 930,600 270,600" fill="#FFF7ED" stroke="#FDBA74" stroke-width="4"/>
+
+  <circle cx="600" cy="170" r="72" fill="#F97316"/>
+  <text x="530" y="180" fill="#FFF7ED" font-family="Arial, sans-serif" font-size="30" font-weight="700">可靠性</text>
+
+  <circle cx="270" cy="600" r="72" fill="#0EA5E9"/>
+  <text x="190" y="610" fill="#EFF6FF" font-family="Arial, sans-serif" font-size="30" font-weight="700">可扩展性</text>
+
+  <circle cx="930" cy="600" r="72" fill="#14B8A6"/>
+  <text x="846" y="610" fill="#F0FDFA" font-family="Arial, sans-serif" font-size="30" font-weight="700">可维护性</text>
+
+  <rect x="450" y="355" width="300" height="120" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="488" y="402" fill="#0F172A" font-family="Arial, sans-serif" font-size="28" font-weight="700">业务目标</text>
+  <text x="490" y="438" fill="#475569" font-family="Arial, sans-serif" font-size="20">成本、风险、交付速度、合规</text>
+
+  <path d="M514 324L410 250" stroke="#F97316" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <path d="M686 324L790 250" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <path d="M470 486L362 538" stroke="#0EA5E9" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <path d="M730 486L838 538" stroke="#14B8A6" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+  <text x="95" y="210" fill="#334155" font-family="Arial, sans-serif" font-size="22">常见取舍：</text>
+  <text x="95" y="248" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 多副本与校验增强可靠性，但会增加复杂度</text>
+  <text x="95" y="282" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 缓存与异步化提升吞吐，但一致性更难处理</text>
+  <text x="95" y="316" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 过度优化局部性能，可能损害长期可演化性</text>
+
+  <text x="760" y="210" fill="#334155" font-family="Arial, sans-serif" font-size="22">实践建议：</text>
+  <text x="760" y="248" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 先定义故障模型与性能目标</text>
+  <text x="760" y="282" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 再围绕负载参数设计架构</text>
+  <text x="760" y="316" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 最后为未来变更预留演进空间</text>
+</svg>

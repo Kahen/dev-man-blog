@@ -1,0 +1,43 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="80" x2="1450" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF3D7"/>
+      <stop offset="0.5" stop-color="#F2F7E8"/>
+      <stop offset="1" stop-color="#DDEEF6"/>
+    </linearGradient>
+    <linearGradient id="panelA" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F97316"/>
+      <stop offset="1" stop-color="#FB923C"/>
+    </linearGradient>
+    <linearGradient id="panelB" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#0891B2"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="panelC" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1360" cy="160" r="140" fill="#FFE0B2" opacity="0.65"/>
+  <circle cx="210" cy="770" r="170" fill="#C7E8F4" opacity="0.55"/>
+  <rect x="88" y="92" width="1424" height="716" rx="34" fill="#FFFCF5" stroke="#1F2937" stroke-opacity="0.08"/>
+  <text x="138" y="200" fill="#0F172A" font-family="Georgia, serif" font-size="58" font-weight="700">数据密集型系统的三根支柱</text>
+  <text x="138" y="272" fill="#334155" font-family="Arial, sans-serif" font-size="28">Reliability · Scalability · Maintainability</text>
+  <text x="138" y="330" fill="#475569" font-family="Arial, sans-serif" font-size="24">从“能跑”到“能长期跑得稳”的系统设计视角</text>
+  <rect x="136" y="410" width="370" height="250" rx="28" fill="url(#panelA)"/>
+  <rect x="615" y="410" width="370" height="250" rx="28" fill="url(#panelB)"/>
+  <rect x="1094" y="410" width="370" height="250" rx="28" fill="url(#panelC)"/>
+  <text x="176" y="485" fill="#FFF7ED" font-family="Arial, sans-serif" font-size="34" font-weight="700">可靠性</text>
+  <text x="176" y="530" fill="#FFF7ED" font-family="Arial, sans-serif" font-size="22">故障发生时仍能维持</text>
+  <text x="176" y="565" fill="#FFF7ED" font-family="Arial, sans-serif" font-size="22">正确性与可用性</text>
+  <text x="655" y="485" fill="#F0FDFA" font-family="Arial, sans-serif" font-size="34" font-weight="700">可扩展性</text>
+  <text x="655" y="530" fill="#F0FDFA" font-family="Arial, sans-serif" font-size="22">负载增长时仍能保持</text>
+  <text x="655" y="565" fill="#F0FDFA" font-family="Arial, sans-serif" font-size="22">性能与成本平衡</text>
+  <text x="1134" y="485" fill="#ECFEFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">可维护性</text>
+  <text x="1134" y="530" fill="#ECFEFF" font-family="Arial, sans-serif" font-size="22">系统可理解、可操作、</text>
+  <text x="1134" y="565" fill="#ECFEFF" font-family="Arial, sans-serif" font-size="22">可演化，不易腐化</text>
+  <path d="M326 702C412 748 575 748 660 702" stroke="#F97316" stroke-width="10" stroke-linecap="round" opacity="0.25"/>
+  <path d="M805 702C890 748 1054 748 1138 702" stroke="#0EA5A4" stroke-width="10" stroke-linecap="round" opacity="0.25"/>
+  <path d="M986 730C1071 790 1277 790 1362 730" stroke="#0F766E" stroke-width="10" stroke-linecap="round" opacity="0.18"/>
+</svg>

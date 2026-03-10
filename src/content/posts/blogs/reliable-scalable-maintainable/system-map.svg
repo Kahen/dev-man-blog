@@ -1,0 +1,50 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#FFFDF8"/>
+  <text x="74" y="88" fill="#0F172A" font-family="Arial, sans-serif" font-size="34" font-weight="700">组合式数据系统示意图</text>
+  <text x="74" y="126" fill="#475569" font-family="Arial, sans-serif" font-size="20">主库、缓存、索引与异步处理并不是孤岛，它们共同组成一套面对用户的数据系统</text>
+
+  <rect x="78" y="230" width="220" height="120" rx="24" fill="#E0F2FE" stroke="#0284C7"/>
+  <text x="142" y="285" fill="#075985" font-family="Arial, sans-serif" font-size="30" font-weight="700">用户请求</text>
+  <text x="120" y="320" fill="#0C4A6E" font-family="Arial, sans-serif" font-size="20">读写、检索、异步任务</text>
+
+  <rect x="398" y="180" width="260" height="140" rx="24" fill="#FFF7ED" stroke="#F97316"/>
+  <text x="486" y="240" fill="#9A3412" font-family="Arial, sans-serif" font-size="32" font-weight="700">应用服务</text>
+  <text x="442" y="278" fill="#7C2D12" font-family="Arial, sans-serif" font-size="20">统一对外 API 与业务规则</text>
+
+  <rect x="782" y="88" width="320" height="120" rx="24" fill="#F1F5F9" stroke="#64748B"/>
+  <text x="900" y="138" fill="#334155" font-family="Arial, sans-serif" font-size="30" font-weight="700">缓存</text>
+  <text x="854" y="172" fill="#475569" font-family="Arial, sans-serif" font-size="20">高频读取、削峰、降延迟</text>
+
+  <rect x="782" y="248" width="320" height="120" rx="24" fill="#ECFCCB" stroke="#65A30D"/>
+  <text x="885" y="298" fill="#3F6212" font-family="Arial, sans-serif" font-size="30" font-weight="700">主数据库</text>
+  <text x="842" y="332" fill="#4D7C0F" font-family="Arial, sans-serif" font-size="20">权威数据、事务、持久化</text>
+
+  <rect x="782" y="408" width="320" height="120" rx="24" fill="#FCE7F3" stroke="#DB2777"/>
+  <text x="872" y="458" fill="#9D174D" font-family="Arial, sans-serif" font-size="30" font-weight="700">搜索索引</text>
+  <text x="827" y="492" fill="#9D174D" font-family="Arial, sans-serif" font-size="20">全文搜索、过滤、排序</text>
+
+  <rect x="782" y="568" width="320" height="120" rx="24" fill="#EDE9FE" stroke="#7C3AED"/>
+  <text x="860" y="618" fill="#5B21B6" font-family="Arial, sans-serif" font-size="30" font-weight="700">消息队列</text>
+  <text x="818" y="652" fill="#6D28D9" font-family="Arial, sans-serif" font-size="20">异步处理、解耦、重试</text>
+
+  <path d="M298 290H384" stroke="#0F172A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M365 272L396 290L365 308" fill="#0F172A"/>
+
+  <path d="M658 250H760" stroke="#F97316" stroke-width="8" stroke-linecap="round"/>
+  <path d="M742 232L772 250L742 268" fill="#F97316"/>
+
+  <path d="M658 286H760" stroke="#65A30D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M742 268L772 286L742 304" fill="#65A30D"/>
+
+  <path d="M658 322C737 322 706 468 760 468" stroke="#DB2777" stroke-width="8" stroke-linecap="round"/>
+  <path d="M742 450L772 468L742 486" fill="#DB2777"/>
+
+  <path d="M658 338C737 338 706 628 760 628" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+  <path d="M742 610L772 628L742 646" fill="#7C3AED"/>
+
+  <text x="122" y="448" fill="#475569" font-family="Arial, sans-serif" font-size="22">设计重点：</text>
+  <text x="122" y="488" fill="#334155" font-family="Arial, sans-serif" font-size="20">• 一致性如何维护</text>
+  <text x="122" y="522" fill="#334155" font-family="Arial, sans-serif" font-size="20">• 故障如何隔离</text>
+  <text x="122" y="556" fill="#334155" font-family="Arial, sans-serif" font-size="20">• 高负载如何分摊</text>
+  <text x="122" y="590" fill="#334155" font-family="Arial, sans-serif" font-size="20">• 变更如何低风险演进</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#FCFCFB"/>
+  <text x="78" y="88" fill="#0F172A" font-family="Arial, sans-serif" font-size="34" font-weight="700">平均值稳定，不代表用户体验稳定</text>
+  <text x="78" y="126" fill="#475569" font-family="Arial, sans-serif" font-size="20">随着负载升高，p95 和 p99 往往先于平均值失控，这就是尾延迟问题</text>
+
+  <line x1="110" y1="620" x2="1080" y2="620" stroke="#94A3B8" stroke-width="3"/>
+  <line x1="110" y1="620" x2="110" y2="180" stroke="#94A3B8" stroke-width="3"/>
+
+  <text x="1030" y="668" fill="#334155" font-family="Arial, sans-serif" font-size="22">系统负载</text>
+  <text x="42" y="184" fill="#334155" font-family="Arial, sans-serif" font-size="22" transform="rotate(-90 42 184)">响应时间</text>
+
+  <path d="M150 540C260 520 330 508 430 490C560 468 690 450 820 430C906 415 983 404 1060 392" stroke="#0EA5E9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M150 548C270 544 350 540 450 534C562 526 690 516 820 504C914 495 989 488 1060 480" stroke="#22C55E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M150 558C300 556 420 554 520 550C640 544 730 528 820 490C910 452 986 378 1060 248" stroke="#F97316" stroke-width="12" stroke-linecap="round"/>
+
+  <circle cx="890" cy="442" r="9" fill="#0EA5E9"/>
+  <circle cx="890" cy="497" r="9" fill="#22C55E"/>
+  <circle cx="890" cy="430" r="9" fill="#F97316" opacity="0"/>
+
+  <rect x="770" y="182" width="278" height="128" rx="20" fill="#FFF7ED" stroke="#FDBA74"/>
+  <text x="802" y="226" fill="#9A3412" font-family="Arial, sans-serif" font-size="26" font-weight="700">尾延迟会放大问题</text>
+  <text x="802" y="262" fill="#7C2D12" font-family="Arial, sans-serif" font-size="18">一个请求依赖多个后端时，</text>
+  <text x="802" y="290" fill="#7C2D12" font-family="Arial, sans-serif" font-size="18">最慢的那个组件决定最终体验。</text>
+
+  <rect x="776" y="526" width="256" height="120" rx="20" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <line x1="806" y1="560" x2="874" y2="560" stroke="#22C55E" stroke-width="8" stroke-linecap="round"/>
+  <text x="894" y="568" fill="#334155" font-family="Arial, sans-serif" font-size="20">平均值</text>
+  <line x1="806" y1="596" x2="874" y2="596" stroke="#0EA5E9" stroke-width="8" stroke-linecap="round"/>
+  <text x="894" y="604" fill="#334155" font-family="Arial, sans-serif" font-size="20">p95</text>
+  <line x1="806" y1="632" x2="874" y2="632" stroke="#F97316" stroke-width="8" stroke-linecap="round"/>
+  <text x="894" y="640" fill="#334155" font-family="Arial, sans-serif" font-size="20">p99</text>
+
+  <text x="180" y="675" fill="#64748B" font-family="Arial, sans-serif" font-size="18">低</text>
+  <text x="600" y="675" fill="#64748B" font-family="Arial, sans-serif" font-size="18">中</text>
+  <text x="1000" y="675" fill="#64748B" font-family="Arial, sans-serif" font-size="18">高</text>
+</svg>
