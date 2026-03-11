@@ -1,0 +1,23 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#FFFDF8"/>
+  <text x="74" y="88" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="700">数据模型的分层抽象</text>
+  <text x="74" y="126" fill="#4B5563" font-family="Arial, sans-serif" font-size="20">上层关注业务语义，下层处理表示细节；每一层都在隐藏下一层的复杂度</text>
+  <rect x="170" y="180" width="860" height="92" rx="22" fill="#E0F2FE" stroke="#0284C7"/>
+  <text x="222" y="236" fill="#075985" font-family="Arial, sans-serif" font-size="30" font-weight="700">业务对象</text>
+  <text x="420" y="236" fill="#0C4A6E" font-family="Arial, sans-serif" font-size="22">用户、订单、内容、组织、支付、消息</text>
+  <rect x="170" y="314" width="860" height="92" rx="22" fill="#ECFCCB" stroke="#65A30D"/>
+  <text x="222" y="370" fill="#3F6212" font-family="Arial, sans-serif" font-size="30" font-weight="700">逻辑数据模型</text>
+  <text x="468" y="370" fill="#4D7C0F" font-family="Arial, sans-serif" font-size="22">表、文档、键值、图、索引视图</text>
+  <rect x="170" y="448" width="860" height="92" rx="22" fill="#FCE7F3" stroke="#DB2777"/>
+  <text x="222" y="504" fill="#9D174D" font-family="Arial, sans-serif" font-size="30" font-weight="700">数据库内部结构</text>
+  <text x="492" y="504" fill="#9D174D" font-family="Arial, sans-serif" font-size="22">页、日志、索引、缓存、查询计划</text>
+  <rect x="170" y="582" width="860" height="92" rx="22" fill="#EDE9FE" stroke="#7C3AED"/>
+  <text x="222" y="638" fill="#5B21B6" font-family="Arial, sans-serif" font-size="30" font-weight="700">物理表示</text>
+  <text x="422" y="638" fill="#6D28D9" font-family="Arial, sans-serif" font-size="22">内存对象、磁盘字节、电流、磁场、光信号</text>
+  <path d="M600 272V312" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M600 406V446" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M600 540V580" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M586 296L600 316L614 296" fill="#94A3B8"/>
+  <path d="M586 430L600 450L614 430" fill="#94A3B8"/>
+  <path d="M586 564L600 584L614 564" fill="#94A3B8"/>
+</svg>

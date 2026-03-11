@@ -1,0 +1,28 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#FFFCF7"/>
+  <text x="78" y="88" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="700">命令式与声明式：数据库到底替你做了什么</text>
+  <text x="78" y="126" fill="#4B5563" font-family="Arial, sans-serif" font-size="20">声明式查询不只是更短，它把优化责任从应用代码转移给了数据库引擎</text>
+
+  <rect x="84" y="192" width="454" height="452" rx="24" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="242" y="238" fill="#0F172A" font-family="Arial, sans-serif" font-size="30" font-weight="700">命令式</text>
+  <text x="126" y="310" fill="#475569" font-family="monospace" font-size="22">for each row in animals:</text>
+  <text x="126" y="352" fill="#475569" font-family="monospace" font-size="22">  if row.family == "Sharks":</text>
+  <text x="126" y="394" fill="#475569" font-family="monospace" font-size="22">    append row to result</text>
+  <text x="126" y="492" fill="#334155" font-family="Arial, sans-serif" font-size="22">特点：</text>
+  <text x="126" y="534" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 应用代码决定执行顺序</text>
+  <text x="126" y="568" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 优化依赖人工重写逻辑</text>
+  <text x="126" y="602" fill="#475569" font-family="Arial, sans-serif" font-size="20">• 底层变化更容易影响上层实现</text>
+
+  <rect x="662" y="192" width="454" height="452" rx="24" fill="#ECFDF5" stroke="#86EFAC"/>
+  <text x="822" y="238" fill="#166534" font-family="Arial, sans-serif" font-size="30" font-weight="700">声明式</text>
+  <text x="706" y="330" fill="#166534" font-family="monospace" font-size="24">SELECT *</text>
+  <text x="706" y="372" fill="#166534" font-family="monospace" font-size="24">FROM animals</text>
+  <text x="706" y="414" fill="#166534" font-family="monospace" font-size="24">WHERE family = 'Sharks';</text>
+  <text x="706" y="492" fill="#166534" font-family="Arial, sans-serif" font-size="22">特点：</text>
+  <text x="706" y="534" fill="#166534" font-family="Arial, sans-serif" font-size="20">• 只描述结果，不规定步骤</text>
+  <text x="706" y="568" fill="#166534" font-family="Arial, sans-serif" font-size="20">• 优化器可自由选择执行计划</text>
+  <text x="706" y="602" fill="#166534" font-family="Arial, sans-serif" font-size="20">• 更易并行化、索引化与长期演进</text>
+
+  <path d="M560 418H640" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M620 400L648 418L620 436" fill="#94A3B8"/>
+</svg>

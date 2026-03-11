@@ -1,0 +1,44 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="28" fill="#FCFCFB"/>
+  <text x="72" y="88" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="700">同一份业务资料，三种典型建模方式</text>
+  <text x="72" y="126" fill="#4B5563" font-family="Arial, sans-serif" font-size="20">当一份“用户档案”同时包含聚合字段、标准化实体和外部引用时，不同模型的重心会完全不同</text>
+
+  <rect x="72" y="190" width="320" height="500" rx="24" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="176" y="236" fill="#0F172A" font-family="Arial, sans-serif" font-size="30" font-weight="700">关系模型</text>
+  <rect x="104" y="276" width="256" height="74" rx="16" fill="#E0F2FE"/>
+  <text x="137" y="321" fill="#075985" font-family="Arial, sans-serif" font-size="24">users</text>
+  <rect x="104" y="390" width="256" height="74" rx="16" fill="#ECFCCB"/>
+  <text x="137" y="435" fill="#3F6212" font-family="Arial, sans-serif" font-size="24">positions</text>
+  <rect x="104" y="504" width="256" height="74" rx="16" fill="#FCE7F3"/>
+  <text x="137" y="549" fill="#9D174D" font-family="Arial, sans-serif" font-size="24">education</text>
+  <rect x="104" y="618" width="256" height="40" rx="12" fill="#F3F4F6"/>
+  <text x="130" y="644" fill="#475569" font-family="Arial, sans-serif" font-size="18">通过外键连接共享实体</text>
+  <path d="M232 350V390" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M232 464V504" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+
+  <rect x="440" y="190" width="320" height="500" rx="24" fill="#FFF7ED" stroke="#FDBA74"/>
+  <text x="548" y="236" fill="#9A3412" font-family="Arial, sans-serif" font-size="30" font-weight="700">文档模型</text>
+  <rect x="482" y="278" width="236" height="330" rx="18" fill="#FFFFFF" stroke="#FED7AA"/>
+  <text x="515" y="324" fill="#7C2D12" font-family="monospace" font-size="20">{</text>
+  <text x="542" y="360" fill="#7C2D12" font-family="monospace" font-size="20">"user": {...},</text>
+  <text x="542" y="396" fill="#7C2D12" font-family="monospace" font-size="20">"positions": [...],</text>
+  <text x="542" y="432" fill="#7C2D12" font-family="monospace" font-size="20">"education": [...],</text>
+  <text x="542" y="468" fill="#7C2D12" font-family="monospace" font-size="20">"contact": {...}</text>
+  <text x="515" y="504" fill="#7C2D12" font-family="monospace" font-size="20">}</text>
+  <text x="500" y="646" fill="#9A3412" font-family="Arial, sans-serif" font-size="18">整体读取自然，复杂关联较弱时更顺手</text>
+
+  <rect x="808" y="190" width="320" height="500" rx="24" fill="#F0FDFA" stroke="#5EEAD4"/>
+  <text x="922" y="236" fill="#115E59" font-family="Arial, sans-serif" font-size="30" font-weight="700">图模型</text>
+  <circle cx="900" cy="360" r="44" fill="#CCFBF1" stroke="#14B8A6"/>
+  <text x="874" y="367" fill="#115E59" font-family="Arial, sans-serif" font-size="20">用户</text>
+  <circle cx="1036" cy="316" r="44" fill="#CCFBF1" stroke="#14B8A6"/>
+  <text x="1010" y="323" fill="#115E59" font-family="Arial, sans-serif" font-size="20">学校</text>
+  <circle cx="1036" cy="428" r="44" fill="#CCFBF1" stroke="#14B8A6"/>
+  <text x="1010" y="435" fill="#115E59" font-family="Arial, sans-serif" font-size="20">公司</text>
+  <circle cx="916" cy="532" r="44" fill="#CCFBF1" stroke="#14B8A6"/>
+  <text x="890" y="539" fill="#115E59" font-family="Arial, sans-serif" font-size="20">地区</text>
+  <path d="M939 347L996 329" stroke="#14B8A6" stroke-width="5"/>
+  <path d="M936 380L997 411" stroke="#14B8A6" stroke-width="5"/>
+  <path d="M905 404L916 488" stroke="#14B8A6" stroke-width="5"/>
+  <text x="844" y="646" fill="#115E59" font-family="Arial, sans-serif" font-size="18">把“关系”本身提升为一等对象</text>
+</svg>

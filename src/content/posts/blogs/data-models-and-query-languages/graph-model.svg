@@ -1,0 +1,31 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#FBFCFE"/>
+  <text x="78" y="88" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="700">图模型擅长的不是“存对象”，而是“找关系模式”</text>
+  <text x="78" y="126" fill="#4B5563" font-family="Arial, sans-serif" font-size="20">当问题变成多跳遍历、路径约束和模式匹配时，节点与边会比表与文档更贴近问题本身</text>
+  <circle cx="248" cy="380" r="62" fill="#DBEAFE" stroke="#2563EB" stroke-width="3"/>
+  <text x="214" y="388" fill="#1D4ED8" font-family="Arial, sans-serif" font-size="28" font-weight="700">Lucy</text>
+  <circle cx="506" cy="246" r="58" fill="#CCFBF1" stroke="#0F766E" stroke-width="3"/>
+  <text x="470" y="254" fill="#115E59" font-family="Arial, sans-serif" font-size="26" font-weight="700">Idaho</text>
+  <circle cx="792" cy="206" r="64" fill="#ECFCCB" stroke="#65A30D" stroke-width="3"/>
+  <text x="730" y="214" fill="#3F6212" font-family="Arial, sans-serif" font-size="26" font-weight="700">United States</text>
+  <circle cx="1034" cy="246" r="56" fill="#FEF3C7" stroke="#D97706" stroke-width="3"/>
+  <text x="998" y="254" fill="#B45309" font-family="Arial, sans-serif" font-size="24" font-weight="700">Europe</text>
+  <circle cx="506" cy="522" r="58" fill="#FCE7F3" stroke="#DB2777" stroke-width="3"/>
+  <text x="466" y="530" fill="#9D174D" font-family="Arial, sans-serif" font-size="26" font-weight="700">London</text>
+  <circle cx="792" cy="562" r="60" fill="#EDE9FE" stroke="#7C3AED" stroke-width="3"/>
+  <text x="754" y="570" fill="#5B21B6" font-family="Arial, sans-serif" font-size="24" font-weight="700">England</text>
+
+  <path d="M304 348L452 274" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+  <text x="352" y="292" fill="#1D4ED8" font-family="Arial, sans-serif" font-size="18">BORN_IN</text>
+  <path d="M564 236L720 214" stroke="#65A30D" stroke-width="6" stroke-linecap="round"/>
+  <text x="620" y="206" fill="#4D7C0F" font-family="Arial, sans-serif" font-size="18">WITHIN</text>
+  <path d="M302 412L452 490" stroke="#DB2777" stroke-width="6" stroke-linecap="round"/>
+  <text x="354" y="470" fill="#BE185D" font-family="Arial, sans-serif" font-size="18">LIVES_IN</text>
+  <path d="M564 532L720 554" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+  <text x="620" y="584" fill="#6D28D9" font-family="Arial, sans-serif" font-size="18">WITHIN</text>
+  <path d="M850 206L978 238" stroke="#D97706" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <path d="M850 562C924 540 966 422 1012 296" stroke="#D97706" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 12"/>
+
+  <rect x="820" y="628" width="292" height="70" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="848" y="672" fill="#334155" font-family="Arial, sans-serif" font-size="20">查询重点：匹配“出生于美国，现居欧洲”</text>
+</svg>
