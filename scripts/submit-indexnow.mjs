@@ -25,18 +25,42 @@ const ENDPOINTS = [
 ];
 
 /**
- * 从 sitemap.xml 中提取所有 URL
+ * 从 sitemap 中提取所有 URL
+ * Astro @astrojs/sitemap 生成 sitemap-index.xml → sitemap-0.xml 两级结构
  */
 function getUrlsFromSitemap() {
-	const sitemapPath = resolve(ROOT, "dist/sitemap.xml");
-	let content;
+	const distDir = resolve(ROOT, "dist");
+
+	// 优先尝试 sitemap-index.xml（Astro 默认）
+	const indexPath = resolve(distDir, "sitemap-index.xml");
 	try {
-		content = readFileSync(sitemapPath, "utf-8");
+		const indexContent = readFileSync(indexPath, "utf-8");
+		const sitemapFiles = [];
+		const indexRegex = /<loc>(.*?)<\/loc>/g;
+		let m;
+		while ((m = indexRegex.exec(indexContent)) !== null) {
+			// loc 是线上 URL（如 https://cyber.cc.cd/sitemap-0.xml），取文件名映射到本地
+			const filename = m[1].split("/").pop();
+			sitemapFiles.push(resolve(distDir, filename));
+		}
+
+		const urls = [];
+		for (const file of sitemapFiles) {
+			const content = readFileSync(file, "utf-8");
+			const regex = /<loc>(.*?)<\/loc>/g;
+			let match;
+			while ((match = regex.exec(content)) !== null) {
+				urls.push(match[1]);
+			}
+		}
+		if (urls.length > 0) return urls;
 	} catch {
-		console.error("[IndexNow] sitemap.xml 未找到，请先执行 pnpm build");
-		process.exit(1);
+		// sitemap-index.xml 不存在，回退到 sitemap.xml
 	}
 
+	// 回退：直接读 sitemap.xml（单文件模式）
+	const sitemapPath = resolve(distDir, "sitemap.xml");
+	const content = readFileSync(sitemapPath, "utf-8");
 	const urls = [];
 	const regex = /<loc>(.*?)<\/loc>/g;
 	let match;

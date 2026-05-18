@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "check": "astro check",
-    "build": "astro build && pagefind --site dist && node scripts/submit-indexnow.mjs",
+    "build": "astro build && pagefind --site dist && (node scripts/submit-indexnow.mjs || true)",
     "indexnow": "node scripts/submit-indexnow.mjs",
     "preview": "astro preview",
     "astro": "astro",
