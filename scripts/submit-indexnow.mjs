@@ -8,7 +8,7 @@
  */
 
 import { readFileSync } from "node:fs";
-import { resolve, dirname } from "node:path";
+import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -20,8 +20,8 @@ const DEFAULT_API_KEY = "43d3b715bb144880b337831e95ac0741";
 
 // IndexNow 端点
 const ENDPOINTS = [
-	`https://api.indexnow.org/indexNow`,
-	`https://www.bing.com/indexNow`,
+	"https://api.indexnow.org/indexNow",
+	"https://www.bing.com/indexNow",
 ];
 
 function isTruthy(value) {
@@ -32,7 +32,9 @@ function isTruthy(value) {
 function normalizeHost(host) {
 	if (!host) return "";
 	try {
-		const url = host.startsWith("http") ? new URL(host) : new URL(`https://${host}`);
+		const url = host.startsWith("http")
+			? new URL(host)
+			: new URL(`https://${host}`);
 		return url.host;
 	} catch {
 		return host.replace(/^https?:\/\//, "").replace(/\/+$/, "");
@@ -139,19 +141,16 @@ function getUrlsFromSitemap() {
 }
 
 /**
- * 向 IndexNow 端点提交 URL（方案 1：key 文件在根目录，不传 keyLocation）
+ * 向 IndexNow 端点提交 URL（始终携带 keyLocation 以避免重定向问题）
  */
-async function submitUrls({ host, apiKey, urls, keyLocation, includeKeyLocation }) {
-	// 方案 1：key 文件在根目录 https://host/key.txt
-	// 不需要 keyLocation 字段
+async function submitUrls({ host, apiKey, urls, keyLocation }) {
+	// 始终带上 keyLocation，避免部分客户端不跟随 http -> https 跳转
 	const payload = {
 		host,
 		key: apiKey,
 		urlList: urls,
 	};
-	if (includeKeyLocation) {
-		payload.keyLocation = keyLocation;
-	}
+	payload.keyLocation = keyLocation;
 	const body = JSON.stringify(payload);
 
 	for (const endpoint of ENDPOINTS) {
@@ -163,10 +162,14 @@ async function submitUrls({ host, apiKey, urls, keyLocation, includeKeyLocation 
 			});
 
 			if (res.ok || res.status === 202) {
-				console.log(`[IndexNow] ✓ 提交成功 (${endpoint}) — ${urls.length} 个 URL`);
+				console.log(
+					`[IndexNow] ✓ 提交成功 (${endpoint}) — ${urls.length} 个 URL`,
+				);
 			} else {
 				const text = await res.text();
-				console.warn(`[IndexNow] ⚠ 提交返回 ${res.status} (${endpoint}): ${text}`);
+				console.warn(
+					`[IndexNow] ⚠ 提交返回 ${res.status} (${endpoint}): ${text}`,
+				);
 			}
 		} catch (err) {
 			console.warn(`[IndexNow] ✗ 提交失败 (${endpoint}): ${err.message}`);
@@ -219,5 +222,4 @@ await submitUrls({
 	apiKey,
 	urls: filteredUrls,
 	keyLocation,
-	includeKeyLocation: Boolean(ENV.INDEXNOW_KEY_LOCATION),
 });
