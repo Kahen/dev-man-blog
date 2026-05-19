@@ -71,6 +71,19 @@ function getUrlsFromSitemap() {
 }
 
 /**
+ * 检查 key 验证文件是否可被外部访问
+ * 服务端在接收到提交后会反查该文件，若尚未上线则返回 403
+ */
+async function checkKeyFileAccessible() {
+	try {
+		const res = await fetch(KEY_LOCATION, { method: "GET" });
+		return res.status === 200;
+	} catch {
+		return false;
+	}
+}
+
+/**
  * 向 IndexNow 端点提交 URL
  */
 async function submitUrls(urls) {
@@ -107,6 +120,18 @@ const urls = args.length > 0 ? args : getUrlsFromSitemap();
 
 if (urls.length === 0) {
 	console.log("[IndexNow] 没有需要提交的 URL");
+	process.exit(0);
+}
+
+// 提交前检查 key 验证文件是否已对外可访问
+// 新部署站点在上线前 key 文件无法被搜索引擎服务端反查，提交会被拒绝（403）
+console.log(`[IndexNow] 检查 key 验证文件是否可访问: ${KEY_LOCATION}`);
+const keyAccessible = await checkKeyFileAccessible();
+if (!keyAccessible) {
+	console.warn(
+		`[IndexNow] ⚠ key 验证文件尚未生效（${KEY_LOCATION} 不可访问），` +
+		`站点可能尚未上线，跳过本次提交。`
+	);
 	process.exit(0);
 }
 
